@@ -1,0 +1,43 @@
+body {
+  font-family: "Goblin One", cursive;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    background-color: rgb(61, 20, 77);
+    color: white;
+  }
+  article {
+    margin: 10px;
+    border: 2px solid white;
+  }
+  #mainHeader {
+    text-align: center;
+    font-family: "Goblin One", cursive;
+    color: green;
+  }
+  .contentHeader {
+    text-align: center;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .mobileBtn {
+    background-color: rgb(182, 47, 47);
+    color: white;
+    width: 100%;
+    margin: 5px;
+    font-size: 21px;
+    padding: 30px 8px;
+    border-radius: 20px;
+  }
+  .hide {
+    display: none;
+  }
+  .content {
+    text-align: center;
+  }
+}
