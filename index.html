@@ -15,18 +15,39 @@
     />
   </head>
   <body>
-    <h1 id="mainHeader">Spreadable Jam</h1>
+    <h1 id="mainHeader">Jam Spread</h1>
+    <p id="mainSubHeader">A community driven blog and database for exquisite Music.</p>
 
     <div class="navbar">
       <div class="submit">
-        <button class="mobileBtn">Submit a Jam</button>
+        <button class="modal-button">Submit</button>
       </div>
       <div class="changing">
-        <button class="communityBtn mobileBtn">Community Jams</button>
-        <button class="featuredBtn hide mobileBtn">Featured Jams</button>
+        <button class="communityBtn mobileBtn">Community</button>
+        <button class="featuredBtn hide mobileBtn">Featured</button>
       </div>
     </div>
     <main>
+      </div>
+      <div class="modal-bg">
+        <div class="modal">
+          <h3 class="modal-header">Let's Find That Song You Were Talking About:</h3>
+          <label for="track">Track:</label>
+          <input type="text" name="track" />
+          <label for="artist">Artist:</label>
+          <input type="text" name="artist" />
+          <button>Search</button>
+          <span class="modal-close">X</span>
+        </div>
+      </div>
+        <!-- <form method="get" action="https://api.discogs.com/database/search/?">
+          <a href="#close" title="Close" class="close">X</a>
+          <h2>Let's Find That Jam You Were Talking About</h2>
+              <input type="text" name="q">
+            <button type="submit" id= "searchButton">Search</button>
+          </form> -->
+
+      </div>
       <div class="content featuredContent">
         <h1 class="featuredHeader">Featured Jams</h1>
         <p>This is some good content</p>
