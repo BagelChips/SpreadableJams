@@ -6,76 +6,383 @@ body {
 main {
   background-color: rgb(61, 20, 77);
   color: white;
+  overflow: scroll;
+  max-height: 80vh;
 }
 
-button {
-  background-color: rgb(182, 47, 47);
-  color: white;
-  width: 150px;
-  margin: 10px;
-  font-size: 1.5rem;
-  padding: 20px 8px;
-  border-radius: 20px;
-  font-size: 1.5rem;
-  font-weight: 900;
-  border: 2px solid rgba(0, 0, 0, 0.342);
-  box-shadow: 5px 3px 5px 1px rgba(139, 30, 30, 0.788);
-}
-
-#mainHeader {
-  text-align: center;
-  font-family: "Goblin One", cursive;
-  font-size: 2.4rem;
-  color: green;
+.communityHeader {
+  box-sizing: content-box;
+  width: 70%;
+  min-width: 250px;
+  margin: 10px 5px;
+  padding: 10px;
+  font-size: 1.7rem;
+  line-height: 45px;
+  color: rgb(108, 88, 124);
   background-color: whitesmoke;
-  border: 2px solid rgb(182, 47, 47);
-  border-radius: 20px;
-  box-shadow: 5px 3px 5px 1px rgba(139, 30, 30, 0.788);
-}
-
-#mainSubHeader {
-  background-color: whitesmoke;
-  border: 2px solid rgb(182, 47, 47);
-  border-radius: 20px;
-  box-shadow: 5px 3px 5px 1px rgba(139, 30, 30, 0.788);
-  font-size: 1.2rem;
+  border: 3px solid rgba(108, 88, 124);
+  border-radius: 5px;
   text-align: center;
-  padding: 5px;
 }
 
-@media screen and (max-width: 800px) {
+.featuredHeader {
+  text-align: center;
+  box-sizing: border-box;
+  width: 70%;
+  min-width: 350px;
+  max-width: 415px;
+  min-height: 80px;
+  margin: 2% auto;
+  line-height: 70px;
+  font-size: 30px;
+  color: rgb(108, 88, 124);
+  background-color: whitesmoke;
+  border: 3px solid rgba(108, 88, 124);
+  border-radius: 5px;
+}
+
+ul {
+  padding: 0px;
+}
+/* /////////////////////////////////////////////////// */
+/* ///////////////   DESKTOP   ////////////////////// */
+/* ///////////////  MEDIA QUERY ////////////////// */
+
+@media screen and (min-width: 751px) {
+  header {
+    /* background-color: #3d144d; */
+    max-width: 1200px;
+    margin: 20px auto;
+    max-height: 30vh;
+    display: flex;
+    justify-content: space-between;
+  }
+  #mobileLogoDiv {
+    display: none;
+  }
+  #mainHeader {
+    text-align: center;
+    font-family: "Goblin One", cursive;
+    font-size: 1.5rem;
+    width: 150px;
+    line-height: 30px;
+    margin-bottom: 0px;
+    padding: auto;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #mainLogoDesign {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 100px;
+    color: rgb(148, 30, 30);
+    font-size: 200px;
+    line-height: 40px;
+    margin-top: -35px;
+    margin-left: -45px;
+    padding: 0px;
+  }
+
+  #siteDescription {
+    color: rgb(148, 30, 30);
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 200px;
+    margin: auto;
+    padding: 0px 10px 0px 20px;
+  }
+
+  #desktopLogoDiv {
+    width: 15%;
+    height: 175px;
+    min-width: 175px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-evenly;
+    border-radius: 350px;
+    padding: auto;
+    margin-left: 50px;
+    border: 4px solid black;
+  }
+
+  .headerFlexContainer {
+    display: flex;
+    margin: 25px 60px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 3px;
+    min-height: 130px;
+  }
+
+  .modal-button {
+    display: block;
+    box-sizing: border-box;
+    max-width: 415px;
+    min-height: 40px;
+    margin: 20px 25px;
+    font-size: 20px;
+    color: rgb(108, 88, 124);
+    background-color: whitesmoke;
+    border: 1px solid rgba(108, 88, 124);
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px black;
+  }
+  .modal-button:hover {
+    border: 1px solid rgb(182, 47, 47);
+    box-shadow: 2px 2px 5px rgb(182, 47, 47);
+  }
+
+  #searchCriteria {
+    margin: 5%;
+    color: rgb(61, 20, 77);
+    font-size: 1.2em;
+    font-weight: 300;
+    display: flex;
+  }
+
+  #flexChildSearch {
+    margin-left: 20px;
+  }
+  #searchPlaceholder {
+    max-width: 600px;
+    font-size: 4em;
+    display: block;
+    height: 150px;
+    line-height: 1.4em;
+    text-align: center;
+    box-sizing: content-box;
+    margin: 0px;
+  }
+  .mobileBtn {
+    display: none;
+  }
+
+  .featuredContent,
+  .communityContent {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    visibility: visible;
+    text-align: center;
+    max-height: 58vh;
+    align-items: center;
+  }
+  .featuredContent {
+    width: 65%;
+    min-width: 375px;
+    overflow: scroll;
+    margin: 10px;
+    background-color: rgb(182, 47, 47);
+    border: 4px solid black;
+    padding: 15px 10px;
+  }
+
+  .communityContent {
+    width: 30%;
+    min-width: 265px;
+    overflow: scroll;
+    height: 550px;
+    margin: 10px;
+    background-color: rgb(182, 47, 47);
+    border: 4px solid black;
+    padding: 15px 10px;
+  }
+
+  .contentWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: max-content;
+  }
+
+  #mobileDescription {
+    display: none;
+  }
+}
+/* ////////////////////////////////////// */
+/* ////////// Mobile Styles ///////////// */
+/* ////////////////////////////////////// */
+
+@media screen and (max-width: 750px) {
+  .featuredContent,
+  .communityContent {
+    overflow: scroll;
+    text-align: center;
+    margin: auto;
+  }
+
+  #desktopLogoDiv {
+    display: none;
+  }
+
+  #mobileLogoDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    justify-content: center;
+    border: 8px solid rgba(0, 0, 0, 0.95);
+  }
+
+  #mobileLogoDiv h1 {
+    font-size: 25px;
+    color: green;
+    text-align: center;
+    margin: 0px;
+    margin-top: -35px;
+  }
+  #mobileLogoDiv h2 {
+    font-size: 150px;
+    margin: 0px;
+    margin-top: -30px;
+    line-height: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color: rgba(139, 30, 30);
+  }
+
+  #mainHeader {
+    text-align: center;
+    font-family: "Goblin One", cursive;
+    font-size: 2.4rem;
+    color: green;
+    background-color: whitesmoke;
+    border: 2px solid rgb(182, 47, 47);
+    border-radius: 20px;
+    box-shadow: 5px 3px 5px 1px rgba(139, 30, 30, 0.788);
+  }
+
+  #mainSubHeader {
+    background-color: whitesmoke;
+    border: 2px solid rgb(182, 47, 47);
+    border-radius: 20px;
+    box-shadow: 5px 3px 5px 1px rgba(139, 30, 30, 0.788);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5px;
+  }
+  #siteDescription {
+    display: none;
+  }
+  #mobileDescription {
+    font-size: 20px;
+    color: rgb(83, 24, 24);
+    text-align: center;
+    height: 80px;
+    margin-top: 25px;
+    padding: 4px;
+    border: 3px solid rgba(0, 0, 0, 0.95);
+    border-radius: 5px;
+    background-color: whitesmoke;
+    width: 230px;
+  }
+
+  #mobileHeaderDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: -15px;
+  }
+
+  .headerFlexContainer {
+    border-bottom: 4px solid rgb(148, 30, 30);
+  }
+
+  .mobileButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  button {
+    color: rgb(182, 47, 47);
+    background-color: whitesmoke;
+    height: 75px;
+    min-width: 150px;
+    max-width: 175px;
+    font-size: 1.9rem;
+    padding: 15px 2px;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: 1px solid rgb(182, 47, 47);
+    box-shadow: 4px 4px 5px 2px rgba(182, 47, 47, 0.6);
+  }
+
+  .modal-close {
+    font-size: 16px;
+    margin-right: 15px;
+    margin-top: 5px;
+    font-weight: 900;
+  }
+
+  #searchCriteria {
+    margin: 15px;
+    color: rgb(61, 20, 77);
+    display: flex;
+    align-items: flex-end;
+  }
+  #modalSearchBtn {
+    color: rgb(61, 20, 77);
+    border: 1px solid rgb(61, 20, 77);
+    font-size: 1.6rem;
+    font-weight: 900;
+    padding: 5px;
+    max-width: 90px;
+    min-width: 80px;
+    height: fit-content;
+    margin: 40px 10px 5px 0px;
+  }
+  #flexChildInput {
+    font-size: 18px;
+    font-weight: 900;
+  }
+  #modalInput {
+    width: 85%;
+    height: 30px;
+    margin: 5px;
+    border: 1px solid rgb(61, 20, 77);
+    border-radius: 3px;
+  }
+
+  #searchPlaceholder {
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin: 60px auto;
+    line-height: 30px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .communityHeader {
+    margin: 10px auto;
+  }
 }
 article {
   margin: 10px 0;
   border: 2px solid white;
 }
 
-.content,
-.featuredHeader,
-.communityHeader {
-  text-align: center;
-  margin-top: 0px;
-}
-
 ul.database {
   list-style-type: none;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  margin-bottom: 0px;
-  border-bottom: 4px solid rgb(148, 30, 30);
-}
-
-.hide {
-  display: none;
-}
-.content {
-  text-align: center;
-}
-
+/* ////////////////////////////////////////// */
+/*/////////////// Modal Styling ///////////// */
+/* ////////////////////////////////////////// */
 .modal-bg {
   position: fixed;
   width: 100%;
@@ -98,8 +405,8 @@ ul.database {
 
 .modal {
   position: relative;
-  font-family: "Montserrat", sans-serif;
-  background-color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: whitesmoke;
   width: 90%;
   height: 90%;
   display: flex;
@@ -107,19 +414,21 @@ ul.database {
   align-items: center;
   flex-direction: column;
   color: rgb(182, 47, 47);
-}
-
-.modal-header {
-  font-size: 2em;
-  font-style: oblique;
-  padding: 15%;
-  font-weight: 900;
+  border-radius: 3px;
+  overflow: scroll;
 }
 
 .modal-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-weight: bold;
+  top: 20px;
+  right: 20px;
+  font-weight: 900;
   cursor: pointer;
+}
+
+#searchContent {
+  margin: 0px;
+}
+
+#flexChildInput {
 }

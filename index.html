@@ -13,89 +13,146 @@
       href="https://fonts.googleapis.com/css2?family=Goblin+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1 id="mainHeader">Jam Spread</h1>
-    <p id="mainSubHeader">A community driven blog and database for exquisite Music.</p>
+    <header >
 
-    <div class="navbar">
-      <div class="submit">
-        <button class="modal-button">Submit</button>
+      <div id="desktopLogoDiv">
+        <h1 id="mainHeader">JAM SPREAD</h1>
+        <p id="mainLogoDesign">.. .</p>
       </div>
-      <div class="changing">
-        <button class="communityBtn mobileBtn">Community</button>
-        <button class="featuredBtn hide mobileBtn">Featured</button>
+      <div id="mobileHeaderDiv">
+        <div id="mobileLogoDiv">
+          <h1>JS</h1>
+          <h2>.. .</h2>
+        </div>
+        <h2 id="mobileDescription">Friendly Neighborhood Music Blog</h2>
       </div>
-    </div>
+      <div class="headerFlexContainer">
+        <h2 id="siteDescription">A COMMUNITY DRIVEN MUSIC BLOG AND DATABASE<h2>
+          <div class="mobileButtonContainer">
+            <button class="modal-button">Find My Jam</button>
+            <button class="communityBtn mobileBtn">Community</button>
+            <button class="featuredBtn hide mobileBtn">Featured</button>
+        </div>
+    </header>
     <main>
       </div>
       <div class="modal-bg">
         <div class="modal">
-          <h3 class="modal-header">Let's Find That Song You Were Talking About:</h3>
-          <label for="track">Track:</label>
-          <input type="text" name="track" />
-          <label for="artist">Artist:</label>
-          <input type="text" name="artist" />
-          <button>Search</button>
-          <span class="modal-close">X</span>
+          <div id="searchCriteria">
+            <div id="flexChildInput">
+              <label for="track">Track:</label>
+                <input type="text" name="track" id="modalInput"/>
+              <label for="artist">Artist:</label>
+                <input type="text" name="artist" id="modalInput"/>
+              </div>
+            <div id="flexChildSearch">
+              <button id="modalSearchBtn">Search</button>
+            </div>
+            <span class="modal-close">X</span>
+        </div>
+        <div id="searchContent">
+          <h2 id="searchPlaceholder">Let's find that jam you were talking about...</h2>
         </div>
       </div>
-        <!-- <form method="get" action="https://api.discogs.com/database/search/?">
-          <a href="#close" title="Close" class="close">X</a>
-          <h2>Let's Find That Jam You Were Talking About</h2>
-              <input type="text" name="q">
-            <button type="submit" id= "searchButton">Search</button>
-          </form> -->
-
       </div>
-      <div class="content featuredContent">
-        <h1 class="featuredHeader">Featured Jams</h1>
-        <p>This is some good content</p>
-        <article>
-          <h1>This is why this jam is so great.</h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nam
-          nostrum iusto repellendus exercitationem ipsa assumenda minus
-          corrupti. Vitae atque repellat quidem et nisi saepe illo sequi
-          accusamus esse at!
-        </article>
-        <article>
-          <h1>Second Incredibly Moving Jam</h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nam
-          nostrum iusto repellendus exercitationem ipsa assumenda minus
-          corrupti. Vitae atque repellat quidem et nisi saepe illo sequi
-          accusamus esse at!
-        </article>
-        <article>
-          <h1>Scroll for eternity...</h1>
-        </article>
-      </div>
-      <div class="content communityContent hide">
-        <h1 class="communityHeader">Community Jams</h1>
-        <h2>Add to the jams and you could end up on the featured page!</h2>
-        <ul class="database">
-          <li>A</li>
-          <li>Database</li>
-          <li>Of</li>
-          <li>User</li>
-          <li>submitted</li>
-          <li>songs</li>
-          <li>that</li>
-          <li>will</li>
-          <li>go</li>
-          <li>on</li>
-          <li>and</li>
-          <li>on</li>
-          <li>and</li>
-          <li>on</li>
-          <li>and</li>
-          <li>on</li>
-          <li>and</li>
-          <li>on</li>
-          <li>and</li>
-          <li>on</li>
-          <li>and</li>
-          <li>on</li>
-        </ul>
+      <div class="contentWrapper">
+        <div class="featuredContent">
+          <h1 class="featuredHeader">Featured Jams</h1>
+          <p>This is some good content</p>
+          <article>
+            <h1>This is why this jam is so great.</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nam
+            nostrum iusto repellendus exercitationem ipsa assumenda minus
+            corrupti. Vitae atque repellat quidem et nisi saepe illo sequi
+            accusamus esse at!
+          </article>
+          <article>
+            <h1>Second Incredibly Moving Jam</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nam
+            nostrum iusto repellendus exercitationem ipsa assumenda minus
+            corrupti. Vitae atque repellat quidem et nisi saepe illo sequi
+            accusamus esse at!
+          </article>
+          <article>
+            <h1>Third Tune</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nam
+            nostrum iusto repellendus exercitationem ipsa assumenda minus
+            corrupti. Vitae atque repellat quidem et nisi saepe illo sequi
+            accusamus esse at!
+          </article>
+          <article>
+            <h1>Fourth One</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nam
+            nostrum iusto repellendus exercitationem ipsa assumenda minus
+            corrupti. Vitae atque repellat quidem et nisi saepe illo sequi
+            accusamus esse at!
+          </article>
+          <article>
+            <h1>Second Incredibly Moving Jam</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error nam
+            nostrum iusto repellendus exercitationem ipsa assumenda minus
+            corrupti. Vitae atque repellat quidem et nisi saepe illo sequi
+            accusamus esse at!
+          </article>
+          <article>
+            <h1>Scroll for eternity...</h1>
+          </article>
+        </div>
+        <div class="communityContent hide">
+          <h1 class="communityHeader">Community Jams</h1>
+          <h2>Add to the jams and you could end up on the featured page!</h2>
+          <ul class="database">
+            <li>A</li>
+            <li>Database</li>
+            <li>Of</li>
+            <li>User</li>
+            <li>submitted</li>
+            <li>songs</li>
+            <li>that</li>
+            <li>will</li>
+            <li>go</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+            <li>on</li>
+            <li>and</li>
+          </ul>
+        </div>
       </div>
     </main>
     <script src="js/app.js" async defer></script>
