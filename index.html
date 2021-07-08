@@ -43,15 +43,22 @@
         </div>
     </header>
     <main>
+      
+<!-- /////////////////////////////////// -->
+<!-- Search Modal ////////////////////////-->
+<!-- //////////////////////////////////////// -->
+
       </div>
       <div class="modal-bg">
         <div class="modal">
           <div id="searchCriteria">
             <div id="flexChildInput">
+              <label for="api">API Key:</label>
+              <input type="text" name="apikey" id="apikey"class="modalInput"/>
               <label for="track">Track:</label>
-                <input type="text" name="track" id="modalInput"/>
+                <input type="text" name="track" id="track"class="modalInput"/>
               <label for="artist">Artist:</label>
-                <input type="text" name="artist" id="modalInput"/>
+                <input type="text" name="artist" id="artist"class="modalInput"/>
               </div>
             <div id="flexChildSearch">
               <button id="modalSearchBtn">Search</button>
@@ -62,6 +69,20 @@
           <h2 id="searchPlaceholder">Let's find that jam you were talking about...</h2>
         </div>
       </div>
+      
+<!-- ///////////////////////// -->
+<!--  CONFIRM JAM WINDOW -->
+<!-- /////////////////////// -->
+
+      <article class="confirmJamModal">
+          <h3>Is this your Jam?</h3>
+            <figure class="confirmJamFigure">
+            </figure>
+            <div class="buttonGroup">
+              <button id="thatsMyJamBtn">That's My Jam!</button>
+              <button id="notMyJamBtn">No. That is not my Jam.</button>
+            </div>
+      </article>>
       </div>
       <div class="contentWrapper">
         <div class="featuredContent">
