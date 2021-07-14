@@ -195,8 +195,10 @@ formButton.addEventListener("click", () => {
         } else {
           searchHTML.innerHTML = `
           <section class="errorAPI">
-            <h4>Something went wrong. Did you enter an API credentials? They should be formatted without spaces, separated by a colon. :P</h4><br>
+            <h4>Something went wrong. Did you enter API credentials? They should be formatted without spaces, separated by a colon. :P</h4>
             <p>(For example 1243132:1982346)</p>
+            <p>If you don't have them, you can sign up for them at:</p>
+            <a href="https://developer.spotify.com/dashboard/applications" target="_blank">Spotify's Developer Portal</a>
           </section>
             `;
         }
